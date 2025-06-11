@@ -1,0 +1,43 @@
+/* estadisticas.css */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: url('../image/cuadro.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.estadisticas-container {
+    background-color: rgba(255, 255, 255, 0.85); /* Blanco semi-transparente */
+    border: 2px solid #007BFF; /* Borde azul */
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0, 123, 255, 0.3); /* Sombra azul suave */
+    backdrop-filter: blur(4px); /* efecto glassmorphism sutil */
+    -webkit-backdrop-filter: blur(4px);
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+/* Para el título principal */
+.panel-title {
+    color: #000000;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+    border: #007BFF;
+}
+
+/* Responsive para charts */
+.chart-canvas {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Mejorar los filtros */
+.filtros-form select, .filtros-form input {
+    border: 1px solid #007BFF;
+    border-radius: 8px;
+}

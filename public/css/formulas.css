@@ -1,0 +1,119 @@
+/* Fondo general */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: url('../image/cuadro.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+/* Contenedor principal con borde negro y sombra azul clara */
+.main-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 30px;
+    overflow-y: auto;
+}
+
+.outer-container {
+    background-color: rgba(255, 255, 255, 0.95);
+    border: 2px solid #00000037;
+    box-shadow: 0 0 20px rgba(0, 191, 255, 0.6);
+    border-radius: 12px;
+    padding: 30px;
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* Contenedor interno con sombra más suave */
+.inner-container {
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    padding: 25px;
+}
+
+/* Tabla */
+.table {
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.table th {
+    background-color: #e0e0e0;
+    font-weight: bold;
+    text-align: center;
+}
+
+.table td, .table th {
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Botones */
+.btn-warning, .btn-danger {
+    margin: 2px;
+}
+
+/* Título */
+.inner-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Imagen */
+td img {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+/* Fondo oscuro semitransparente */
+.image-overlay {
+    display: none;
+    position: fixed;
+    z-index: 1050;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease;
+}
+
+/* Imagen ampliada */
+.image-overlay img {
+    max-width: 90%;
+    max-height: 80%;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.4);
+    transform: scale(0.8);
+    transition: transform 0.4s ease;
+}
+
+.image-overlay.show {
+    display: flex;
+    opacity: 1;
+}
+
+.image-overlay.show img {
+    transform: scale(1);
+}
+

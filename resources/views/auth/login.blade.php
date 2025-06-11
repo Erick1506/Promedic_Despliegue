@@ -3,14 +3,14 @@
 
 @section('css')
     <!-- Cargar solo el archivo CSS necesario para esta vista -->
-    <link rel="stylesheet" href="{{ asset('build/assets/css/login.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/login.css') }}">
 @endsection
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iniciar sesión</title>
-    <link rel="stylesheet" href="{{ asset('build/assets/css/login.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/login.css') }}">
     <script src="https://kit.fontawesome.com/a2dd6045c4.js" crossorigin="anonymous"></script>
 
     <!-- Favicon -->

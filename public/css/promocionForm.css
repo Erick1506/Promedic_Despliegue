@@ -1,0 +1,77 @@
+        body {
+            background-image: url('../../assets/image/cuadro.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+        }
+
+        .container {
+            margin-top: 10px;
+            /* Top margin */
+            width: 100%;
+            /* Ensures the container occupies all available space */
+            max-width: 900px;
+            /* Maximum size for larger screens */
+            min-height: 90vh;
+            /* Minimum height of the container (80% of viewport height) */
+            background-color: rgba(255, 255, 255, 0.9);
+            /* White background with opacity */
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(30, 120, 205, 0.8);
+            padding: 30px;
+            box-sizing: border-box;
+            /* Ensures padding does not affect size */
+            display: grid;
+            /* Enables grid layout */
+            grid-template-rows: 1fr auto;
+            /* Allows for flexible row heights */
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #007bff;
+        }
+
+        label {
+            font-weight: 600;
+            color: #333;
+        }
+
+        .form-select,
+        .form-control {
+            border-radius: 8px;
+        }
+
+        button.btn-primary {
+            width: 30%;
+            padding: 10px;
+            font-weight: bold;
+            border-radius: 8px;
+        }
+
+        button.btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+        .navbar-brand h2 {
+            margin: 0;
+            font-size: 36px;
+            /* Adjust the size as needed */
+            color: #000000;
+        }
+
+
+        .navbar {
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Make the navbar wider */
+        .navbar .container-fluid {
+            max-width: 100%;
+            /* Full width */
+            padding: 0px;
+            /* Add padding on both sides */
+        }
